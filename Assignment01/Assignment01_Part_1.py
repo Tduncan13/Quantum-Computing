@@ -17,7 +17,7 @@ eigen_val_x, eigen_vec_x = np.linalg.eig(sigma_x)
 eigen_val_y, eigen_vec_y = np.linalg.eig(sigma_y)
 eigen_val_z, eigen_vec_z = np.linalg.eig(sigma_z)
 
-# Get number of vectors in Eigenbases
+# Get value of d
 rows, d = eigen_vec_x.shape
 
 # Check if mutually unbiased. 
