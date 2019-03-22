@@ -33,7 +33,7 @@ trials = 10
 probs_zero = []
 probs_one = []
 for n in range(trials):
-    e = np.array([[1, 0],[0, np.exp(2 * np.pi * i * (n / trials))]])
+    e = np.array([[1, 0],[0, np.exp(2 * np.pi * i * (float(n) / trials))]])
     zero, one = hadamard_test(k1, e)
     probs_zero.append(zero)
     probs_one.append(one)
