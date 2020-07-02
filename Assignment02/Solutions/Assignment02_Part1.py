@@ -15,6 +15,7 @@ y = np.array([[0, -i],[i, 0]])
 z = np.array([[1, 0], [0, -1]])
 
 # Perform Hadamard Test to calculate probabilities. 
+# Given a qubit, q and a unitary matrix u.
 def hadamard_test(q, u):
     a = np.matmul(u, q)
     b = q.T.dot(a)
@@ -39,6 +40,7 @@ for n in range(trials):
     probs_one.append(one)
 
 # Plot results. 
+
 y_axis = np.arange(0, 100, 10)
 plt.plot(probs_zero, y_axis)
 plt.plot(probs_one, y_axis)
